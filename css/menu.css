@@ -1,0 +1,23 @@
+header {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  background: var(--bg-white);
+  width: 1.5rem;
+  border-radius: 0.4rem;
+  z-index: 200;
+}
+
+header > nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.4rem;
+}
+
+header svg:hover {
+  transform: scale(1.03);
+}
+
+header svg:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/shop-cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/store/store-types-products.html">
+          <svg
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M3 7l3.5 2M21 17l-3.5-2M12 12L6.5 9m5.5 3l-5.5 3m5.5-3V5m0 7v6.5m0-6.5l5.5 3M12 12l5.5-3M12 2v3m0 17v-3.5M21 7l-3.5 2M3 17l3.5-2m0-6L3 10m3.5-1L6 5.5m.5 9.5L3 14m3.5 1L6 18.5M12 5L9.5 4M12 5l2.5-1M12 18.5l2.5 1.5M12 18.5L9.5 20m8-5l.5 3.5m-.5-3.5l3.5-1m-3.5-5l3.5 1m-3.5-1l.5-3.5"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+        <a href="/store/shop-cart.html">
+          <svg
+            id="shop-cart-icon"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M3 6h19l-3 10H6L3 6zm0 0l-.75-2.5M11 19.5a1.5 1.5 0 01-3 0M17 19.5a1.5 1.5 0 01-3 0"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+        <a href="/index.html">
+          <svg
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M3 9.5L12 4l9 5.5M19 13v6.4a.6.6 0 01-.6.6H5.6a.6.6 0 01-.6-.6V13"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <svg
+        class="bg bg-1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+      >
+        <path fill-rule="evenodd" d="M100 0v100H0C0 50 50 0 100 0z"></path>
+      </svg>
+      <div id="shop-cart-flex">
+        <div class="wrapper">
+          <div class="bg-white">
+            <form id="order-form" action="">
+              <div class="input-group" name="user-data">
+                <h2>Заказчик</h2>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Фамилия/Имя"
+                  required
+                />
+                <input
+                  name="phone"
+                  type="text"
+                  placeholder="Телефон"
+                  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                  required
+                />
+                <input name="comment" type="text" placeholder="Комментарий" />
+              </div>
+              <div class="input-group" name="user-address">
+                <h2>Адрес</h2>
+                <input
+                  name="street"
+                  type="text"
+                  placeholder="Город/Улица"
+                  required
+                />
+                <input name="house" type="text" placeholder="Дом" required />
+                <input name="flat" type="text" placeholder="Квартира" />
+              </div>
+            </form>
+          </div>
+          <div class="bg-white">
+            <div class="shop-cart-group">
+              <div id="form-sent" class="bg-white">
+                <h2>В пути</h2>
+                <p>Доставим в пределах часа</p>
+                <img src="/images/shop-cart.png" alt="" />
+              </div>
+              <h2>Корзина</h2>
+              <div id="empty-shop-cart">
+                <p>Ваша корзина пуста</p>
+                <img src="/images/shop-cart.png" alt="" />
+              </div>
+              <div id="shop-cart"></div>
+              <span id="order-btn-wrapper"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

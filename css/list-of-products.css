@@ -1,0 +1,116 @@
+.grid-wrapper {
+  position: relative;
+  padding-top: 110vh;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  z-index: 150;
+}
+
+.grid {
+  display: grid;
+  row-gap: 1.25rem;
+  column-gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.figure {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.figure-img {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 75%;
+  width: 100%;
+}
+
+.figure-img > img {
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  transform: scale(1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.figure-img:hover > img {
+  transform: scale(1.2);
+}
+
+.figure-caption {
+  display: grid;
+  text-align: center;
+}
+
+.product-title {
+  margin-bottom: 0.5rem;
+}
+
+.figure-caption > span {
+  display: flex;
+  justify-content: center;
+}
+
+.product-details {
+  text-align: start;
+  padding-right: 1rem;
+}
+
+.shop-cart-btn {
+  cursor: pointer;
+  background: var(--bg-opacity);
+  display: block;
+  width: min-content;
+  padding: 13px 30px 13px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.shop-cart-btn::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--bg-green);
+}
+
+.shop-cart-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1800px) {
+  .grid-wrapper {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .grid-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-wrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

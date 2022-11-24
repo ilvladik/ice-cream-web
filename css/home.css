@@ -1,0 +1,64 @@
+.i-milk {
+  position: relative;
+  padding-top: 110vh;
+}
+
+.facts {
+  position: relative;
+  padding: 5rem 0;
+}
+
+.text-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 150;
+}
+
+.content-container {
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  max-width: 24rem;
+  position: relative;
+  z-index: 150;
+}
+
+.store-anchor {
+  display: block;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 30px 13px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.store-anchor::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--bg-green);
+}
+
+.store-anchor span {
+  opacity: 0;
+  transition: 0.3s;
+  transition: transform 1;
+}
+
+.store-anchor div {
+  transition: transform 0.8s;
+}
+
+.store-anchor:hover div {
+  transform: translateX(-6px);
+}
+
+.store-anchor:hover span {
+  opacity: 1;
+}

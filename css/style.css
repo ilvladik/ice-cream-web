@@ -1,0 +1,208 @@
+:root {
+  --bg: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 10%);
+  --bg-yellow: rgba(255, 247, 155, 1);
+  --bg-purple: rgba(137, 128, 192, 1);
+  --bg-red: rgba(242, 105, 121, 1);
+  --bg-green: rgba(102, 242, 213, 1);
+  --bg-blue: rgba(112, 210, 246, 1);
+  --bg-pink: rgba(244, 153, 193, 1);
+  --bg-white: rgba(255, 255, 255, 1);
+  --bg-opacity: rgba(255, 255, 255, 0);
+  --font-family: "Ubuntu", sans-serif;
+  --font-size: 15px;
+  --font-height: 24px;
+  --font-weight: 400;
+  --font-scale-s: 0.8;
+  --font-scale-m: 1.618;
+  --font-scale-l: 2.618;
+  --font-scale-xl: 1.953;
+  --font-scale-xxl: 2.441;
+  font-size: var(--font-height);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.yellow {
+  color: var(--bg-yellow);
+}
+.purple {
+  color: var(--bg-purple);
+}
+.red {
+  color: var(--bg-red);
+}
+.green {
+  color: var(--bg-green);
+}
+.pink {
+  color: var(--bg-pink);
+}
+.blue {
+  color: var(--bg-blue);
+}
+.white {
+  color: var(--bg-white);
+}
+.bg-yellow {
+  background-color: var(--bg-yellow);
+}
+.bg-purple {
+  background-color: var(--bg-purple);
+}
+.bg-red {
+  background-color: var(--bg-red);
+}
+.bg-green {
+  background-color: var(--bg-green);
+}
+.bg-pink {
+  background-color: var(--bg-pink);
+}
+.bg-blue {
+  background-color: var(--bg-blue);
+}
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--bg-green);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: var(--bg-white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 1rem;
+  color: inherit;
+  border-radius: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+  background: var(--bg-red);
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+  -webkit-perspective: 300px;
+  background: var(--bg-pink);
+  position: relative;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem 1rem 1rem;
+  color: var(--bg-white);
+}
+
+h1,
+h2,
+h3 {
+  font-size: calc(var(--font-size) * var(--font-scale-xl));
+  line-height: 1.3rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.intro-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 100;
+  display: flex;
+  padding: 1rem;
+}
+
+.intro-logo svg {
+  display: block;
+  margin: auto;
+  height: 3rem;
+  width: auto;
+}
+
+.bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.bg-1 {
+  padding-top: 30vh;
+  fill: var(--bg-pink);
+  background: var(--bg-green);
+  box-shadow: inset 0px -20px 0px -20px var(--bg-pink);
+}
+
+.bg-2 {
+  fill: var(--bg-yellow);
+}
+
+.bg-3 {
+  top: 150vh;
+  fill: var(--bg-yellow);
+}
+
+@media (min-width: 500px) {
+  :root {
+    --font-size: 17px;
+    --font-height: 26px;
+  }
+}
+@media (min-width: 650px) {
+  :root {
+    --font-size: 19px;
+    --font-height: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --font-size: 22px;
+    --font-height: 34px;
+  }
+}
