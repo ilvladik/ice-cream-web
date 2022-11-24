@@ -3,187 +3,187 @@
 const shopCartKey = "shop-cart";
 const DataBase = JSON.parse(`{
   "Вега": {
-    "image": "/images/waffle/w-1.jpg",
+    "image": "../assets/img/waffle/w-1.jpg",
     "price": 200,
     "weight": 100
   },
   "Капелла": {
-    "image": "/images/waffle/w-2.webp",
+    "image": "../assets/img/waffle/w-2.webp",
     "price": 300,
     "weight": 200
   },
   "Альриша": {
-    "image": "/images/waffle/w-3.jpg",
+    "image": "../assets/img/waffle/w-3.jpg",
     "price": 400,
     "weight": 300
   },
   "Тайгета": {
-    "image": "/images/waffle/w-4.jpg",
+    "image": "../assets/img/waffle/w-4.jpg",
     "price": 500,
     "weight": 400
   },
   "Проксима": {
-    "image": "/images/waffle/w-5.webp",
+    "image": "../assets/img/waffle/w-5.webp",
     "price": 600,
     "weight": 500
   },
   "Электра": {
-    "image": "/images/waffle/w-6.jpg",
+    "image": "../assets/img/waffle/w-6.jpg",
     "price": 700,
     "weight": 600
   },
 
   "Сириус": {
-    "image": "/images/ball/b-1.jpg",
+    "image": "../assets/img/ball/b-1.jpg",
     "price": 200,
     "weight": 100
   },
   "Эпсилон": {
-    "image": "/images/ball/b-2.jpg",
+    "image": "../assets/img/ball/b-2.jpg",
     "price": 300,
     "weight": 200
   },
   "Мицар": {
-    "image": "/images/ball/b-3.jpg",
+    "image": "../assets/img/ball/b-3.jpg",
     "price": 400,
     "weight": 300
   },
   "Бернарда": {
-    "image": "/images/ball/b-4.jpg",
+    "image": "../assets/img/ball/b-4.jpg",
     "price": 500,
     "weight": 400
   },
   "Кастра": {
-    "image": "/images/ball/b-5.jpg",
+    "image": "../assets/img/ball/b-5.jpg",
     "price": 600,
     "weight": 500
   },
   "Лейтена": {
-    "image": "/images/ball/b-6.jpg",
+    "image": "../assets/img/ball/b-6.jpg",
     "price": 700,
     "weight": 600
   },
 
   "Химера": {
-    "image": "/images/stick/s-1.jpg",
+    "image": "../assets/img/stick/s-1.jpg",
     "price": 200,
     "weight": 100
   },
   "Сирена": {
-    "image": "/images/stick/s-2.jpg",
+    "image": "../assets/img/stick/s-2.jpg",
     "price": 300,
     "weight": 200
   },
   "Василиск": {
-    "image": "/images/stick/s-3.jpg",
+    "image": "../assets/img/stick/s-3.jpg",
     "price": 400,
     "weight": 300
   },
   "Гарпия": {
-    "image": "/images/stick/s-4.jpg",
+    "image": "../assets/img/stick/s-4.jpg",
     "price": 500,
     "weight": 400
   },
   "Мантикора": {
-    "image": "/images/stick/s-5.jpg",
+    "image": "../assets/img/stick/s-5.jpg",
     "price": 600,
     "weight": 500
   },
   "Дракайн": {
-    "image": "/images/stick/s-6.jpg",
+    "image": "../assets/img/stick/s-6.jpg",
     "price": 700,
     "weight": 600
   },
 
   "Вереск": {
-    "image": "/images/fruit/f-1.jpg",
+    "image": "../assets/img/fruit/f-1.jpg",
     "price": 200,
     "weight": 100
   },
   "Ирис": {
-    "image": "/images/fruit/f-2.webp",
+    "image": "../assets/img/fruit/f-2.webp",
     "price": 300,
     "weight": 200
   },
   "Лаванда": {
-    "image": "/images/fruit/f-3.jpg",
+    "image": "../assets/img/fruit/f-3.jpg",
     "price": 400,
     "weight": 300
   },
   "Нерине": {
-    "image": "/images/fruit/f-4.jpg",
+    "image": "../assets/img/fruit/f-4.jpg",
     "price": 500,
     "weight": 400
   },
   "Подсолнух": {
-    "image": "/images/fruit/f-5.jpg",
+    "image": "../assets/img/fruit/f-5.jpg",
     "price": 600,
     "weight": 500
   },
   "Ромашка": {
-    "image": "/images/fruit/f-6.jpg",
+    "image": "../assets/img/fruit/f-6.jpg",
     "price": 700,
     "weight": 600
   },
 
   "Туя": {
-    "image": "/images/cake/c-1.jpg",
+    "image": "../assets/img/cake/c-1.jpg",
     "price": 200,
     "weight": 100
   },
   "Бузина": {
-    "image": "/images/cake/c-2.jpg",
+    "image": "../assets/img/cake/c-2.jpg",
     "price": 300,
     "weight": 200
   },
   "Зверобой": {
-    "image": "/images/cake/c-3.jpg",
+    "image": "../assets/img/cake/c-3.jpg",
     "price": 400,
     "weight": 300
   },
   "Леея": {
-    "image": "/images/cake/c-4.jpg",
+    "image": "../assets/img/cake/c-4.jpg",
     "price": 500,
     "weight": 400
   },
   "Мак": {
-    "image": "/images/cake/c-5.jpg",
+    "image": "../assets/img/cake/c-5.jpg",
     "price": 600,
     "weight": 500
   },
   "Морозник": {
-    "image": "/images/cake/c-6.jpg",
+    "image": "../assets/img/cake/c-6.jpg",
     "price": 700,
     "weight": 600
   },
 
   "Нисса": {
-    "image": "/images/milkshake/m-1.jpg",
+    "image": "../assets/img/milkshake/m-1.jpg",
     "price": 200,
     "weight": 100
   },
   "Петуния": {
-    "image": "/images/milkshake/m-2.jpg",
+    "image": "../assets/img/milkshake/m-2.jpg",
     "price": 300,
     "weight": 200
   },
   "Секвойя": {
-    "image": "/images/milkshake/m-3.jpg",
+    "image": "../assets/img/milkshake/m-3.jpg",
     "price": 400,
     "weight": 300
   },
   "Хоя": {
-    "image": "/images/milkshake/m-4.jpg",
+    "image": "../assets/img/milkshake/m-4.jpg",
     "price": 500,
     "weight": 400
   },
   "Хоста": {
-    "image": "/images/milkshake/m-5.jpg",
+    "image": "../assets/img/milkshake/m-5.jpg",
     "price": 600,
     "weight": 500
   },
   "Колючник": {
-    "image": "/images/milkshake/m-6.jpg",
+    "image": "../assets/img/milkshake/m-6.jpg",
     "price": 700,
     "weight": 600
   }
