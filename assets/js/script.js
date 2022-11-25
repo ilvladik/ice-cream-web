@@ -17,7 +17,7 @@ const DataBase = JSON.parse(`{
     "price": 400,
     "weight": 300
   },
-  "Тайгета": {
+  "Фиалка": {
     "image": "../assets/img/waffle/w-4.jpg",
     "price": 500,
     "weight": 400
