@@ -16,7 +16,6 @@
 .figure {
   display: grid;
   row-gap: 1rem;
-  text-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.4);
 }
 
 .figure-img {

@@ -45,6 +45,7 @@
 }
 .white {
   color: var(--bg-white);
+  text-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.4);
 }
 .bg-yellow {
   background-color: var(--bg-yellow);
