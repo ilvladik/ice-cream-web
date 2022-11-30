@@ -19,7 +19,7 @@
 .content-container {
   margin: 0 auto;
   padding: 1rem 1.5rem;
-  max-width: 24rem;
+  width: 24rem;
   position: relative;
   z-index: 150;
 }
@@ -61,4 +61,33 @@
 
 .store-anchor:hover span {
   opacity: 1;
+}
+
+.contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+iframe {
+  aspect-ratio: 2 / 1;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (orientation: portrait) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  iframe {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
 }
